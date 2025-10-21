@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { useState } from "react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface Car {
   id: string;
@@ -17,99 +17,204 @@ export default function Gallery() {
 
   const cars: Car[] = [
     {
-      id: 'car0',
-      title: t('gallery.car0'),
-      category: t('gallery.new'),
+      id: "black-bmw",
+      title: "Black BMW",
+      category: t("gallery.used"),
       images: [
-        '/united-int/Range(1).jpeg',
-        '/united-int/Range(2).jpeg',
-        '/united-int/Range(3).jpeg',
-        '/united-int/Range(4).jpeg',
-        '/united-int/Range(5).jpeg',
-        '/united-int/Range(6).jpeg',
+        "/assets/black-bmw/black-bmw(1).jpeg",
+        "/assets/black-bmw/black-bmw(2).jpeg",
+        "/assets/black-bmw/black-bmw(3).jpeg",
+        "/assets/black-bmw/black-bmw(4).jpeg",
       ],
-      coverImage: '/united-int/Range(6).jpeg',
+      coverImage: "/assets/black-bmw/black-bmw(1).jpeg",
     },
     {
-      id: 'car1',
-      title: t('gallery.car1'),
-      category: t('gallery.new'),
+      id: "black-range-rover",
+      title: "Black Range Rover",
+      category: t("gallery.used"),
       images: [
-        'https://dbz-images.dubizzle.com/images/2025/10/15/fad6e6f2415547678626906cd2d44fb3-.jpeg?impolicy=dpv',
-        'https://dbz-images.dubizzle.com/images/2025/10/15/310ab362623a41568df5dbab34983d48-.jpeg?impolicy=dpv',
-        'https://dbz-images.dubizzle.com/images/2025/10/15/f4eed87318ce431d956382d10d871ba0-.jpeg?impolicy=dpv',
+        "/assets/black-range-rover/black-range-rover(1).jpeg",
+        "/assets/black-range-rover/black-range-rover(2).jpeg",
+        "/assets/black-range-rover/black-range-rover(3).jpeg",
+        "/assets/black-range-rover/black-range-rover(4).jpeg",
+        "/assets/black-range-rover/black-range-rover(5).jpeg",
+        "/assets/black-range-rover/black-range-rover(6).jpeg",
+        "/assets/black-range-rover/black-range-rover(7).jpeg",
+        "/assets/black-range-rover/black-range-rover(8).jpeg",
+        "/assets/black-range-rover/black-range-rover(9).jpeg",
+        "/assets/black-range-rover/black-range-rover(10).jpeg",
+        "/assets/black-range-rover/black-range-rover(11).jpeg",
       ],
-      coverImage: 'https://dbz-images.dubizzle.com/images/2025/10/15/fad6e6f2415547678626906cd2d44fb3-.jpeg?impolicy=dpv',
+      coverImage: "/assets/black-range-rover/black-range-rover(1).jpeg",
     },
     {
-      id: 'car2',
-      title: t('gallery.car2'),
-      category: t('gallery.new'),
+      id: "black-range-rover-2025",
+      title: "Black Range Rover 2025",
+      category: t("gallery.new"),
       images: [
-        'https://dbz-images.dubizzle.com/images/2025/10/18/dcc3a7acb8064acda0041329ace5a1ca-.jpeg?impolicy=dpv',
-        'https://dbz-images.dubizzle.com/images/2025/10/18/7bf596a0230f43c5992b0e311c73829e-.jpeg?impolicy=dpv',
+        "/assets/black-range-rover-2025/black-range-rover-2025(1).jpeg",
+        "/assets/black-range-rover-2025/black-range-rover-2025(2).jpeg",
+        "/assets/black-range-rover-2025/black-range-rover-2025(3).jpeg",
+        "/assets/black-range-rover-2025/black-range-rover-2025(4).jpeg",
+        "/assets/black-range-rover-2025/black-range-rover-2025(5).jpeg",
+        "/assets/black-range-rover-2025/black-range-rover-2025(6).jpeg",
+        "/assets/black-range-rover-2025/black-range-rover-2025(7).jpeg",
+        "/assets/black-range-rover-2025/black-range-rover-2025(8).jpeg",
       ],
-      coverImage: 'https://dbz-images.dubizzle.com/images/2025/10/18/7bf596a0230f43c5992b0e311c73829e-.jpeg?impolicy=dpv',
+      coverImage: "/assets/black-range-rover-2025/black-range-rover-2025(1).jpeg",
     },
     {
-      id: 'car3',
-      title: t('gallery.car3'),
-      category: t('gallery.used'),
+      id: "bmwx4",
+      title: "BMW X4",
+      category: t("gallery.used"),
       images: [
-        'https://dbz-images.dubizzle.com/images/2025/10/21/4d52feac785743428ab904630c30d0bf-.jpeg?impolicy=dpv',
-        'https://dbz-images.dubizzle.com/images/2025/10/21/9848d4fe5f18498f8673cbc1e0f4f16a-.jpeg?impolicy=dpv',
+        "/assets/bmwx4/bmwx4(1).jpeg",
+        "/assets/bmwx4/bmwx4(2).jpeg",
+        "/assets/bmwx4/bmwx4(3).jpeg",
+        "/assets/bmwx4/bmwx4(4).jpeg",
+        "/assets/bmwx4/bmwx4(5).jpeg",
+        "/assets/bmwx4/bmwx4(6).jpeg",
       ],
-      coverImage: 'https://dbz-images.dubizzle.com/images/2025/10/21/3ceb2310be7f46ff8221077bb49b9fef-.jpeg?impolicy=dpv',
+      coverImage: "/assets/bmwx4/bmwx4(1).jpeg",
     },
     {
-      id: 'car4',
-      title: t('gallery.car4'),
-      category: t('gallery.used'),
+      id: "e200",
+      title: "E200",
+      category: t("gallery.used"),
       images: [
-        'https://dbz-images.dubizzle.com/images/2025/09/02/7e971ce3f5ad4a9c9286612a50691d73-.jpeg?impolicy=dpv',
-        'https://dbz-images.dubizzle.com/images/2025/09/02/c273443c60124df9b281ef146a767205-.jpeg?impolicy=dpv',
+        "/assets/e200/e200(1).jpeg",
+        "/assets/e200/e200(2).jpeg",
+        "/assets/e200/e200(3).jpeg",
+        "/assets/e200/e200(4).jpeg",
+        "/assets/e200/e200(5).jpeg",
+        "/assets/e200/e200(6).jpeg",
+        "/assets/e200/e200(7).jpeg",
+        "/assets/e200/e200(8).jpeg",
+        "/assets/e200/e200(9).jpeg",
+        "/assets/e200/e200(10).jpeg",
       ],
-      coverImage: 'https://dbz-images.dubizzle.com/images/2025/09/02/3ba07995903f46ba8a36b5fa864af87f-.jpeg?impolicy=dpv',
+      coverImage: "/assets/e200/e200(1).jpeg",
     },
     {
-      id: 'car5',
-      title: t('gallery.car5'),
-      category: t('gallery.used'),
+      id: "e200-white",
+      title: "E200 White",
+      category: t("gallery.used"),
       images: [
-        'https://dbz-images.dubizzle.com/images/2025/10/21/b644ccb69b2348ee82e21f9367fa4808-.jpeg?impolicy=dpc',
-        'https://dbz-images.dubizzle.com/images/2025/10/21/236d5569f26b4946a7332dfcfa1e0376-.jpeg?impolicy=dpc',
+        "/assets/e200-white/e200-white(1).jpeg",
+        "/assets/e200-white/e200-white(2).jpeg",
+        "/assets/e200-white/e200-white(3).jpeg",
+        "/assets/e200-white/e200-white(4).jpeg",
+        "/assets/e200-white/e200-white(5).jpeg",
+        "/assets/e200-white/e200-white(6).jpeg",
       ],
-      coverImage: 'https://dbz-images.dubizzle.com/images/2025/10/21/b644ccb69b2348ee82e21f9367fa4808-.jpeg?impolicy=dpc',
+      coverImage: "/assets/e200-white/e200-white(1).jpeg",
     },
     {
-      id: 'car6',
-      title: t('gallery.car6'),
-      category: t('gallery.new'),
+      id: "range-rover-discovery",
+      title: "Range Rover Discovery",
+      category: t("gallery.used"),
       images: [
-        'https://dbz-images.dubizzle.com/images/2025/10/01/52fe085d4cf64eb196a35a976018d278-.jpeg?impolicy=dpv',
-        'https://dbz-images.dubizzle.com/images/2025/10/01/425b97c473ca47da80bb489adaaca12f-.jpeg?impolicy=dpv',
+        "/assets/range-rover-discovery/range-rover-discovery(1).jpeg",
+        "/assets/range-rover-discovery/range-rover-discovery(2).jpeg",
+        "/assets/range-rover-discovery/range-rover-discovery(3).jpeg",
+        "/assets/range-rover-discovery/range-rover-discovery(4).jpeg",
+        "/assets/range-rover-discovery/range-rover-discovery(5).jpeg",
+        "/assets/range-rover-discovery/range-rover-discovery(6).jpeg",
+        "/assets/range-rover-discovery/range-rover-discovery(7).jpeg",
+        "/assets/range-rover-discovery/range-rover-discovery(8).jpeg",
+        "/assets/range-rover-discovery/range-rover-discovery(9).jpeg",
+        "/assets/range-rover-discovery/range-rover-discovery(10).jpeg",
+        "/assets/range-rover-discovery/range-rover-discovery(11).jpeg",
       ],
-      coverImage: 'https://dbz-images.dubizzle.com/images/2025/10/01/52fe085d4cf64eb196a35a976018d278-.jpeg?impolicy=dpv',
+      coverImage: "/assets/range-rover-discovery/range-rover-discovery(1).jpeg",
     },
     {
-      id: 'car7',
-      title: t('gallery.car7'),
-      category: t('gallery.used'),
+      id: "range-svr",
+      title: "Range SVR",
+      category: t("gallery.new"),
       images: [
-        'https://dbz-images.dubizzle.com/images/2025/10/06/c5684110f7f74ced9996e078811e483f-.jpeg?impolicy=dpv',
-        'https://dbz-images.dubizzle.com/images/2025/10/06/c2ad6bd32fe34e2289bb7732da4b520b-.jpeg?impolicy=dpv',
+        "/assets/range-svr/range-svr(1).jpeg",
+        "/assets/range-svr/range-svr(2).jpeg",
+        "/assets/range-svr/range-svr(3).jpeg",
+        "/assets/range-svr/range-svr(4).jpeg",
+        "/assets/range-svr/range-svr(5).jpeg",
+        "/assets/range-svr/range-svr(6).jpeg",
+        "/assets/range-svr/range-svr(7).jpeg",
+        "/assets/range-svr/range-svr(8).jpeg",
+        "/assets/range-svr/range-svr(9).jpeg",
+        "/assets/range-svr/range-svr(10).jpeg",
+        "/assets/range-svr/range-svr(11).jpeg",
+        "/assets/range-svr/range-svr(12).jpeg",
+        "/assets/range-svr/range-svr(13).jpeg",
+        "/assets/range-svr/range-svr(14).jpeg",
+        "/assets/range-svr/range-svr(15).jpeg",
+        "/assets/range-svr/range-svr(16).jpeg",
+        "/assets/range-svr/range-svr(17).jpeg",
       ],
-      coverImage: 'https://dbz-images.dubizzle.com/images/2025/10/06/c5684110f7f74ced9996e078811e483f-.jpeg?impolicy=dpv',
+      coverImage: "/assets/range-svr/range-svr(1).jpeg",
     },
     {
-      id: 'car9',
-      title: t('gallery.car9'),
-      category: t('gallery.new'),
+      id: "silver-range-rover",
+      title: "Silver Range Rover",
+      category: t("gallery.used"),
       images: [
-        'https://dbz-images.dubizzle.com/images/2025/10/12/c79dc1c9a4d842f59595f47def800a32-.jpeg?impolicy=dpv',
-        'https://dbz-images.dubizzle.com/images/2025/10/12/d96d39ec3c4e427d933808481c23974c-.jpeg?impolicy=dpv',
+        "/assets/silver-range-rover/silver-range-rover(1).jpeg",
+        "/assets/silver-range-rover/silver-range-rover(2).jpeg",
+        "/assets/silver-range-rover/silver-range-rover(3).jpeg",
+        "/assets/silver-range-rover/silver-range-rover(4).jpeg",
+        "/assets/silver-range-rover/silver-range-rover(5).jpeg",
+        "/assets/silver-range-rover/silver-range-rover(6).jpeg",
+        "/assets/silver-range-rover/silver-range-rover(7).jpeg",
+        "/assets/silver-range-rover/silver-range-rover(8).jpeg",
+        "/assets/silver-range-rover/silver-range-rover(9).jpeg",
+        "/assets/silver-range-rover/silver-range-rover(10).jpeg",
+        "/assets/silver-range-rover/silver-range-rover(11).jpeg",
+        "/assets/silver-range-rover/silver-range-rover(12).jpeg",
+        "/assets/silver-range-rover/silver-range-rover(13).jpeg",
       ],
-      coverImage: 'https://dbz-images.dubizzle.com/images/2025/10/12/c79dc1c9a4d842f59595f47def800a32-.jpeg?impolicy=dpv',
+      coverImage: "/assets/silver-range-rover/silver-range-rover(1).jpeg",
+    },
+    {
+      id: "white-porsche",
+      title: "White Porsche",
+      category: t("gallery.new"),
+      images: [
+        "/assets/white-porsche/white-porsche(1).jpeg",
+        "/assets/white-porsche/white-porsche(2).jpeg",
+        "/assets/white-porsche/white-porsche(3).jpeg",
+        "/assets/white-porsche/white-porsche(4).jpeg",
+        "/assets/white-porsche/white-porsche(5).jpeg",
+        "/assets/white-porsche/white-porsche(6).jpeg",
+        "/assets/white-porsche/white-porsche(7).jpeg",
+        "/assets/white-porsche/white-porsche(8).jpeg",
+        "/assets/white-porsche/white-porsche(9).jpeg",
+        "/assets/white-porsche/white-porsche(10).jpeg",
+        "/assets/white-porsche/white-porsche(11).jpeg",
+      ],
+      coverImage: "/assets/white-porsche/white-porsche(1).jpeg",
+    },
+    {
+      id: "white-range-rover",
+      title: "White Range Rover",
+      category: t("gallery.used"),
+      images: [
+        "/assets/white-range-rover/white-range-rover(1).jpeg",
+        "/assets/white-range-rover/white-range-rover(2).jpeg",
+        "/assets/white-range-rover/white-range-rover(3).jpeg",
+        "/assets/white-range-rover/white-range-rover(4).jpeg",
+        "/assets/white-range-rover/white-range-rover(5).jpeg",
+        "/assets/white-range-rover/white-range-rover(6).jpeg",
+        "/assets/white-range-rover/white-range-rover(7).jpeg",
+        "/assets/white-range-rover/white-range-rover(8).jpeg",
+        "/assets/white-range-rover/white-range-rover(9).jpeg",
+        "/assets/white-range-rover/white-range-rover(10).jpeg",
+        "/assets/white-range-rover/white-range-rover(11).jpeg",
+        "/assets/white-range-rover/white-range-rover(12).jpeg",
+        "/assets/white-range-rover/white-range-rover(13).jpeg",
+        "/assets/white-range-rover/white-range-rover(14).jpeg",
+        "/assets/white-range-rover/white-range-rover(15).jpeg",
+      ],
+      coverImage: "/assets/white-range-rover/white-range-rover(1).jpeg",
     },
   ];
 
@@ -136,15 +241,21 @@ export default function Gallery() {
   };
 
   return (
-    <section id="gallery" className="py-20 bg-gradient-to-br from-white via-gray-50 to-white">
+    <section
+      id="gallery"
+      className="py-20 bg-gradient-to-br from-white via-gray-50 to-white"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">
-            {t('gallery.title')}
+            {t("gallery.title")}
           </h2>
           <div className="w-24 h-1 bg-gold-600 mx-auto mb-6 animate-slide-in-right"></div>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            {t('gallery.description')}
+          <p
+            className="text-xl text-gray-700 max-w-3xl mx-auto animate-fade-in-up"
+            style={{ animationDelay: "0.1s" }}
+          >
+            {t("gallery.description")}
           </p>
         </div>
 
@@ -177,7 +288,7 @@ export default function Gallery() {
                           {car.category}
                         </span>
                         <span className="inline-block bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium">
-                          {car.images.length} {t('gallery.photos')}
+                          {car.images.length} {t("gallery.photos")}
                         </span>
                       </div>
                     </div>
@@ -191,19 +302,32 @@ export default function Gallery() {
         <div className="mt-16 bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl border-2 border-gray-200 hover:border-gold-500 transition-all duration-500 shadow-lg animate-fade-in-up">
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              {t('gallery.searchTitle')}
+              {t("gallery.searchTitle")}
             </h3>
             <p className="text-gray-600 text-lg mb-6">
-              {t('gallery.searchDescription')}
+              {t("gallery.searchDescription")}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gray-200 hover:border-gold-500 hover:scale-105 transition-all duration-300">
-                <p className="text-sm text-gray-600">{t('gallery.phone')}</p>
-                <a className="text-lg font-bold text-gold-600 text-left" href="tel:(06)5207204" dir="ltr">(06) 520 7204</a>
+                <p className="text-sm text-gray-600">{t("gallery.phone")}</p>
+                <a
+                  className="text-lg font-bold text-gold-600 text-left"
+                  href="tel:(06)5207204"
+                  dir="ltr"
+                >
+                  (06) 520 7204
+                </a>
               </div>
               <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gray-200 hover:border-gold-500 hover:scale-105 transition-all duration-300">
-                <p className="text-sm text-gray-600">{t('gallery.email')}</p>
-                <a target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-gold-600 hover:text-gold-700 transition-colors" href="mailto:info@unitedint-uae.com">info@unitedint-uae.com</a>
+                <p className="text-sm text-gray-600">{t("gallery.email")}</p>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-bold text-gold-600 hover:text-gold-700 transition-colors"
+                  href="mailto:info@unitedint-uae.com"
+                >
+                  info@unitedint-uae.com
+                </a>
               </div>
             </div>
           </div>
@@ -283,8 +407,8 @@ export default function Gallery() {
                 }}
                 className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden transition-all duration-300 ${
                   index === currentImageIndex
-                    ? 'ring-2 ring-gold-500 scale-110'
-                    : 'opacity-50 hover:opacity-100'
+                    ? "ring-2 ring-gold-500 scale-110"
+                    : "opacity-50 hover:opacity-100"
                 }`}
               >
                 <img
