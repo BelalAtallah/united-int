@@ -32,9 +32,15 @@ export default function About() {
   ];
 
   const handleDownload = (filename: string) => {
+    const pdfUrls: { [key: string]: string } = {
+      'License.pdf': 'https://d3b0v1su6mtr8p.cloudfront.net/License.pdf',
+      'Commercial Registry In Details.pdf': 'https://d3b0v1su6mtr8p.cloudfront.net/Commercial-Registry-In-Details.pdf'
+    };
+    
     const link = document.createElement('a');
-    link.href = `/${filename}`;
+    link.href = pdfUrls[filename] || `/${filename}`;
     link.download = filename;
+    link.target = '_blank';
     link.click();
   };
 
