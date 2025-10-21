@@ -7,47 +7,47 @@ export default function Gallery() {
   const carImages = [
     {
       url: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة فاخرة',
+      title: 'سيارة سيدان أنيقة',
       category: 'جديدة',
     },
     {
       url: 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة رياضية',
+      title: 'سيارة كوبيه رياضية',
       category: 'جديدة',
     },
     {
       url: 'https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة دفع رباعي',
+      title: 'سيارة سيدان فاخرة',
       category: 'جديدة',
     },
     {
       url: 'https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة عائلية',
+      title: 'سيارة سيدان كلاسيكية',
       category: 'مستعملة',
     },
     {
       url: 'https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة كلاسيكية',
+      title: 'سيارة كوبيه أنيقة',
       category: 'مستعملة',
     },
     {
       url: 'https://images.pexels.com/photos/2920064/pexels-photo-2920064.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة فاخرة حمراء',
+      title: 'سيارة سيدان حمراء',
       category: 'جديدة',
     },
     {
       url: 'https://images.pexels.com/photos/1213294/pexels-photo-1213294.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة سوداء أنيقة',
+      title: 'سيارة سيدان سوداء',
       category: 'جديدة',
     },
     {
       url: 'https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة بيضاء فاخرة',
+      title: 'سيارة سيدان بيضاء',
       category: 'مستعملة',
     },
     {
       url: 'https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة رياضية زرقاء',
+      title: 'سيارة كوبيه زرقاء',
       category: 'جديدة',
     },
   ];
