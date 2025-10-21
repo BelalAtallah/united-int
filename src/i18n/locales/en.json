@@ -1,0 +1,128 @@
+{
+  "navbar": {
+    "companyName": "United International",
+    "companySubtitle": "United International F.Z.E",
+    "home": "Home",
+    "about": "About Us",
+    "gallery": "Gallery"
+  },
+  "home": {
+    "title": "United International",
+    "subtitle": "United International F.Z.E",
+    "description": "Your trusted partner in automotive trading and logistics services",
+    "subDescription": "We provide comprehensive solutions in new and used car trading, spare parts, and customs clearance",
+    "licenseNumber": "License Number",
+    "location": "Location",
+    "established": "Established",
+    "services": "Our Services",
+    "newCars": {
+      "title": "New Automobile Trading",
+      "subtitle": "New Automobile Trading",
+      "description": "Exporting new cars worldwide"
+    },
+    "customsClearance": {
+      "title": "Customs Clearance Services",
+      "subtitle": "Customs Clearance",
+      "description": "Professional and fast customs clearance services"
+    },
+    "carAccessories": {
+      "title": "Car Accessories Trading",
+      "subtitle": "Car Accessories Trading",
+      "description": "Import and export of the best car accessories"
+    },
+    "usedCars": {
+      "title": "Used Cars Trading",
+      "subtitle": "Used Cars Trading",
+      "description": "Carefully inspected and high-quality used cars"
+    },
+    "spareParts": {
+      "title": "Used Spare Parts",
+      "subtitle": "Used Spare Parts",
+      "description": "Original car spare parts - import and export"
+    },
+    "inquiry": {
+      "title": "Have an inquiry?",
+      "description": "We are here to help you with all your business needs",
+      "phone": "Toll Free Phone",
+      "website": "Website"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "description": "United International - A leading company in automotive trading and integrated logistics services",
+    "legalForm": "Legal Form",
+    "legalFormValue": "Free Zone Establishment - Limited Liability",
+    "legalFormSubtitle": "Free Zone Establishment - Limited Liability",
+    "licenseNumber": "License & Registration Number",
+    "licenseNumberValue": "39087",
+    "licenseNumberSubtitle": "License & Registration Number",
+    "establishmentDate": "Establishment Date",
+    "establishmentDateValue": "February 27, 2025",
+    "establishmentDateSubtitle": "February 27, 2025",
+    "authorizedCapital": "Authorized Capital",
+    "authorizedCapitalValue": "AED 100,000",
+    "authorizedCapitalSubtitle": "AED 100,000 Authorized Capital",
+    "visionMission": {
+      "title": "Our Vision & Mission",
+      "vision": {
+        "title": "Our Vision",
+        "description": "To be the first and most trusted partner in automotive trading and logistics services in the Middle East and beyond"
+      },
+      "mission": {
+        "title": "Our Mission",
+        "description": "Providing high-quality services in new and used car trading, spare parts, and customs clearance while adhering to the highest standards of professionalism and transparency"
+      }
+    },
+    "documents": {
+      "title": "Official Documents",
+      "description": "You can download our official documents and approved licenses",
+      "businessLicense": "Business License",
+      "businessLicenseSubtitle": "Business License",
+      "commercialRegistry": "Commercial Registry",
+      "commercialRegistrySubtitle": "Commercial Registry",
+      "downloadPdf": "Download PDF"
+    },
+    "contactInfo": {
+      "title": "Contact Information",
+      "address": "Address",
+      "addressValue": "Building C1, Ajman Free Zone",
+      "addressSubtitle": "Office - C1 - 1F - SF4362",
+      "phone": "Toll Free Phone",
+      "website": "Website"
+    }
+  },
+  "gallery": {
+    "title": "Car Gallery",
+    "description": "Discover our diverse collection of luxury and high-quality cars",
+    "searchTitle": "Looking for a specific car?",
+    "searchDescription": "We provide search and supply services on demand. Contact us to get the car of your dreams",
+    "phone": "Toll Free Phone",
+    "website": "Website",
+    "fullView": "Full View",
+    "new": "New",
+    "used": "Used",
+    "car1": "Elegant Sedan",
+    "car2": "Sporty Coupe",
+    "car3": "Luxury Sedan",
+    "car4": "Classic Sedan",
+    "car5": "Elegant Coupe",
+    "car6": "Red Sedan",
+    "car7": "Black Sedan",
+    "car8": "White Sedan",
+    "car9": "Blue Coupe"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "company": "United International",
+    "description": "Your trusted partner in automotive trading and integrated logistics services in Ajman Free Zone",
+    "companyInfo": "Company Information",
+    "contactUs": "Contact Us",
+    "licenseNumber": "License Number",
+    "registrationNumber": "Registration Number",
+    "freeZoneEstablishment": "Free Zone Establishment",
+    "capital": "Capital",
+    "address": "Building C1, First Floor",
+    "addressLine2": "Ajman Free Zone, UAE",
+    "licensedBy": "Licensed by Ajman Free Zone Authority"
+  }
+}

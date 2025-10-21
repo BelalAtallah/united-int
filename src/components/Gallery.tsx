@@ -1,54 +1,56 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const { t } = useTranslation();
 
   const carImages = [
     {
       url: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة سيدان أنيقة',
-      category: 'جديدة',
+      title: t('gallery.car1'),
+      category: t('gallery.new'),
     },
     {
       url: 'https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة كوبيه رياضية',
-      category: 'جديدة',
+      title: t('gallery.car2'),
+      category: t('gallery.new'),
     },
     {
       url: 'https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة سيدان فاخرة',
-      category: 'جديدة',
+      title: t('gallery.car3'),
+      category: t('gallery.new'),
     },
     {
       url: 'https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة سيدان كلاسيكية',
-      category: 'مستعملة',
+      title: t('gallery.car4'),
+      category: t('gallery.used'),
     },
     {
       url: 'https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة كوبيه أنيقة',
-      category: 'مستعملة',
+      title: t('gallery.car5'),
+      category: t('gallery.used'),
     },
     {
       url: 'https://images.pexels.com/photos/2920064/pexels-photo-2920064.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة سيدان حمراء',
-      category: 'جديدة',
+      title: t('gallery.car6'),
+      category: t('gallery.new'),
     },
     {
       url: 'https://images.pexels.com/photos/1213294/pexels-photo-1213294.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة سيدان سوداء',
-      category: 'جديدة',
+      title: t('gallery.car7'),
+      category: t('gallery.new'),
     },
     {
       url: 'https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة سيدان بيضاء',
-      category: 'مستعملة',
+      title: t('gallery.car8'),
+      category: t('gallery.used'),
     },
     {
       url: 'https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: 'سيارة كوبيه زرقاء',
-      category: 'جديدة',
+      title: t('gallery.car9'),
+      category: t('gallery.new'),
     },
   ];
 
@@ -57,11 +59,11 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">
-            معرض السيارات
+            {t('gallery.title')}
           </h2>
           <div className="w-24 h-1 bg-gold-600 mx-auto mb-6 animate-slide-in-right"></div>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            اكتشف مجموعتنا المتنوعة من السيارات الفاخرة والعالية الجودة
+            {t('gallery.description')}
           </p>
         </div>
 
@@ -103,18 +105,18 @@ export default function Gallery() {
         <div className="mt-16 bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl border-2 border-gray-200 hover:border-gold-500 transition-all duration-500 shadow-lg animate-fade-in-up">
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              هل تبحث عن سيارة معينة؟
+              {t('gallery.searchTitle')}
             </h3>
             <p className="text-gray-600 text-lg mb-6">
-              نوفر خدمة البحث والتوريد حسب الطلب. تواصل معنا للحصول على السيارة التي تحلم بها
+              {t('gallery.searchDescription')}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gray-200 hover:border-gold-500 hover:scale-105 transition-all duration-300">
-                <p className="text-sm text-gray-600">الهاتف المجاني</p>
+                <p className="text-sm text-gray-600">{t('gallery.phone')}</p>
                 <p className="text-lg font-bold text-gold-600 text-left" dir="ltr">800 2392</p>
               </div>
               <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gray-200 hover:border-gold-500 hover:scale-105 transition-all duration-300">
-                <p className="text-sm text-gray-600">الموقع الإلكتروني</p>
+                <p className="text-sm text-gray-600">{t('gallery.website')}</p>
                 <p className="text-lg font-bold text-gold-600">www.fza.ae</p>
               </div>
             </div>
@@ -135,7 +137,7 @@ export default function Gallery() {
           </button>
           <img
             src={selectedImage}
-            alt="عرض كامل"
+            alt={t('gallery.fullView')}
             className="max-w-full max-h-full object-contain animate-scale-in"
             onClick={(e) => e.stopPropagation()}
           />

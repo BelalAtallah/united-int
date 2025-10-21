@@ -1,37 +1,40 @@
 import { Car, Package, Truck, Wrench, FileCheck } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import Logo from './Logo';
 
 export default function Home() {
+  const { t } = useTranslation();
+  
   const services = [
     {
       icon: Car,
-      title: 'تجارة السيارات الجديدة',
-      subtitle: 'New Automobile Trading',
-      description: 'تصدير السيارات الجديدة إلى جميع أنحاء العالم',
+      title: t('home.newCars.title'),
+      subtitle: t('home.newCars.subtitle'),
+      description: t('home.newCars.description'),
     },
     {
       icon: FileCheck,
-      title: 'خدمات التخليص الجمركي',
-      subtitle: 'Customs Clearance',
-      description: 'خدمات تخليص جمركي احترافية وسريعة',
+      title: t('home.customsClearance.title'),
+      subtitle: t('home.customsClearance.subtitle'),
+      description: t('home.customsClearance.description'),
     },
     {
       icon: Package,
-      title: 'تجارة إكسسوارات السيارات',
-      subtitle: 'Car Accessories Trading',
-      description: 'استيراد وتصدير أفضل إكسسوارات السيارات',
+      title: t('home.carAccessories.title'),
+      subtitle: t('home.carAccessories.subtitle'),
+      description: t('home.carAccessories.description'),
     },
     {
       icon: Truck,
-      title: 'تجارة السيارات المستعملة',
-      subtitle: 'Used Cars Trading',
-      description: 'سيارات مستعملة مفحوصة بعناية وجودة عالية',
+      title: t('home.usedCars.title'),
+      subtitle: t('home.usedCars.subtitle'),
+      description: t('home.usedCars.description'),
     },
     {
       icon: Wrench,
-      title: 'قطع الغيار المستعملة',
-      subtitle: 'Used Spare Parts',
-      description: 'قطع غيار أصلية للسيارات - استيراد وتصدير',
+      title: t('home.spareParts.title'),
+      subtitle: t('home.spareParts.subtitle'),
+      description: t('home.spareParts.description'),
     },
   ];
 
@@ -52,32 +55,32 @@ export default function Home() {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 animate-fade-in-up">
-              المتحدون انترناشيونال
+              {t('home.title')}
             </h1>
             <p className="text-2xl md:text-3xl text-gold-600 font-semibold mb-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              United International F.Z.E
+              {t('home.subtitle')}
             </p>
 
             <div className="max-w-3xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                شريكك الموثوق في تجارة السيارات والخدمات اللوجستية
+                {t('home.description')}
               </p>
               <p className="text-base md:text-lg text-gray-600 mt-2">
-                نقدم حلولاً شاملة في تجارة السيارات الجديدة والمستعملة، قطع الغيار، والتخليص الجمركي
+                {t('home.subDescription')}
               </p>
             </div>
 
             <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
               <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gold-300 hover:border-gold-500 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <p className="text-sm text-gray-600">رقم الرخصة</p>
+                <p className="text-sm text-gray-600">{t('home.licenseNumber')}</p>
                 <p className="text-lg font-bold text-gold-600">39087</p>
               </div>
               <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gold-300 hover:border-gold-500 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <p className="text-sm text-gray-600">الموقع</p>
-                <p className="text-lg font-bold text-gold-600">منطقة عجمان الحرة</p>
+                <p className="text-sm text-gray-600">{t('home.location')}</p>
+                <p className="text-lg font-bold text-gold-600">Ajman Free Zone</p>
               </div>
               <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gold-300 hover:border-gold-500 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <p className="text-sm text-gray-600">تأسست</p>
+                <p className="text-sm text-gray-600">{t('home.established')}</p>
                 <p className="text-lg font-bold text-gold-600">2025</p>
               </div>
             </div>
@@ -89,7 +92,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">
-              خدماتنا
+              {t('home.services')}
             </h2>
             <div className="w-24 h-1 bg-gold-600 mx-auto animate-slide-in-right"></div>
           </div>
@@ -130,18 +133,18 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in-up">
-            هل لديك استفسار؟
+            {t('home.inquiry.title')}
           </h2>
           <p className="text-xl text-gray-300 mb-8 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            نحن هنا لمساعدتك في جميع احتياجاتك التجارية
+            {t('home.inquiry.description')}
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <div className="bg-white px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <p className="text-sm text-gray-600">الهاتف المجاني</p>
+              <p className="text-sm text-gray-600">{t('home.inquiry.phone')}</p>
               <p className="text-lg font-bold text-gold-600 text-left" dir="ltr">800 2392</p>
             </div>
             <div className="bg-white px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <p className="text-sm text-gray-600">الموقع الإلكتروني</p>
+              <p className="text-sm text-gray-600">{t('home.inquiry.website')}</p>
               <p className="text-lg font-bold text-gold-600">www.fza.ae</p>
             </div>
           </div>

@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import Logo from './Logo';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +24,14 @@ export default function Navbar() {
     }
   };
 
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'ar' ? 'en' : 'ar';
+    i18n.changeLanguage(newLang);
+    // Update document direction
+    document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = newLang;
+  };
+
   return (
     <nav className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm shadow-md'
@@ -33,32 +43,41 @@ export default function Navbar() {
               <Logo className="w-12 h-12" />
             </div>
             <div className="flex flex-col">
-              <span className="text-md  font-bold text-gray-800 hover:text-gold-600 transition-colors lg:text-2xl">المتحدون انترناشيونال</span>
-              <span className="text-xs text-gray-600">United International F.Z.E</span>
+              <span className="text-md  font-bold text-gray-800 hover:text-gold-600 transition-colors lg:text-2xl">{t('navbar.companyName')}</span>
+              <span className="text-xs text-gray-600">{t('navbar.companySubtitle')}</span>
             </div>
           </div>
 
-          <div className="hidden md:flex gap-8">
+          <div className="hidden md:flex gap-8 items-center">
             <button
               onClick={() => scrollToSection('home')}
               className="text-gray-700 hover:text-gold-600 font-medium transition-all duration-300 text-lg relative group"
             >
-              الرئيسية
+              {t('navbar.home')}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-600 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
               onClick={() => scrollToSection('about')}
               className="text-gray-700 hover:text-gold-600 font-medium transition-all duration-300 text-lg relative group"
             >
-              من نحن
+              {t('navbar.about')}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-600 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
               onClick={() => scrollToSection('gallery')}
               className="text-gray-700 hover:text-gold-600 font-medium transition-all duration-300 text-lg relative group"
             >
-              المعرض
+              {t('navbar.gallery')}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-600 transition-all duration-300 group-hover:w-full"></span>
+            </button>
+            
+            {/* Language Toggle Button */}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-2 px-3 py-2 text-gray-700 hover:text-gold-600 font-medium transition-all duration-300 text-sm border border-gray-300 rounded-lg hover:border-gold-500 hover:bg-gold-50"
+            >
+              <Globe className="w-4 h-4" />
+              <span>{i18n.language === 'ar' ? 'EN' : 'عربي'}</span>
             </button>
           </div>
 
@@ -78,19 +97,28 @@ export default function Navbar() {
               onClick={() => scrollToSection('home')}
               className="block w-full text-right text-gray-700 hover:text-gold-600 hover:bg-gold-50 font-medium text-lg py-2 px-3 rounded-lg transition-all duration-300"
             >
-              الرئيسية
+              {t('navbar.home')}
             </button>
             <button
               onClick={() => scrollToSection('about')}
               className="block w-full text-right text-gray-700 hover:text-gold-600 hover:bg-gold-50 font-medium text-lg py-2 px-3 rounded-lg transition-all duration-300"
             >
-              من نحن
+              {t('navbar.about')}
             </button>
             <button
               onClick={() => scrollToSection('gallery')}
               className="block w-full text-right text-gray-700 hover:text-gold-600 hover:bg-gold-50 font-medium text-lg py-2 px-3 rounded-lg transition-all duration-300"
             >
-              المعرض
+              {t('navbar.gallery')}
+            </button>
+            
+            {/* Language Toggle Button for Mobile */}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center justify-center gap-2 w-full text-gray-700 hover:text-gold-600 hover:bg-gold-50 font-medium text-lg py-2 px-3 rounded-lg transition-all duration-300 border border-gray-300"
+            >
+              <Globe className="w-5 h-5" />
+              <span>{i18n.language === 'ar' ? 'EN' : 'عربي'}</span>
             </button>
           </div>
         </div>

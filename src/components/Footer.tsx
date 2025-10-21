@@ -1,7 +1,10 @@
 import { MapPin, Phone, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import Logo from './Logo';
 
 export default function Footer() {
+  const { t } = useTranslation();
+  
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
@@ -17,33 +20,33 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <Logo className="w-12 h-12" />
               <div>
-                <h3 className="text-xl font-bold text-gold-400">المتحدون انترناشيونال</h3>
+                <h3 className="text-xl font-bold text-gold-400">{t('footer.company')}</h3>
                 <p className="text-sm text-gray-400">United International F.Z.E</p>
               </div>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              شريكك الموثوق في تجارة السيارات والخدمات اللوجستية المتكاملة في منطقة عجمان الحرة
+              {t('footer.description')}
             </p>
           </div>
 
           <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            <h4 className="text-lg font-bold text-gold-400 mb-4">معلومات الشركة</h4>
+            <h4 className="text-lg font-bold text-gold-400 mb-4">{t('footer.companyInfo')}</h4>
             <ul className="space-y-2 text-gray-400">
-              <li className="hover:text-gold-400 transition-colors">رقم الرخصة: 39087</li>
-              <li className="hover:text-gold-400 transition-colors">رقم السجل: 39087</li>
-              <li className="hover:text-gold-400 transition-colors">مؤسسة منطقة حرة</li>
-              <li className="hover:text-gold-400 transition-colors">رأس المال: 100,000 درهم</li>
+              <li className="hover:text-gold-400 transition-colors">{t('footer.licenseNumber')}: 39087</li>
+              <li className="hover:text-gold-400 transition-colors">{t('footer.registrationNumber')}: 39087</li>
+              <li className="hover:text-gold-400 transition-colors">{t('footer.freeZoneEstablishment')}</li>
+              <li className="hover:text-gold-400 transition-colors">{t('footer.capital')}: 100,000 AED</li>
             </ul>
           </div>
 
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <h4 className="text-lg font-bold text-gold-400 mb-4">تواصل معنا</h4>
+            <h4 className="text-lg font-bold text-gold-400 mb-4">{t('footer.contactUs')}</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-3 hover:text-gold-400 transition-colors">
                 <MapPin className="w-5 h-5 text-gold-500 flex-shrink-0 mt-1" />
                 <span className="text-gray-400">
-                  مبنى C1، الطابق الأول<br />
-                  منطقة عجمان الحرة، الإمارات
+                  {t('footer.address')}<br />
+                  {t('footer.addressLine2')}
                 </span>
               </li>
               <li className="flex items-center gap-3 hover:text-gold-400 transition-colors">
@@ -61,10 +64,10 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-center md:text-right">
-              © 2025 المتحدون انترناشيونال. جميع الحقوق محفوظة.
+              © 2025 {t('footer.company')}. {t('footer.rights')}.
             </p>
             <p className="text-gray-500 text-center md:text-left">
-              مرخصة من هيئة المناطق الحرة في عجمان
+              {t('footer.licensedBy')}
             </p>
           </div>
         </div>
