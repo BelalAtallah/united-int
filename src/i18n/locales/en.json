@@ -44,7 +44,8 @@
       "title": "Have an inquiry?",
       "description": "We are here to help you with all your business needs",
       "phone": "Toll Free Phone",
-      "website": "Website"
+      "website": "Website",
+      "email": "Email"
     }
   },
   "about": {
@@ -88,7 +89,8 @@
       "addressValue": "Building C1, Ajman Free Zone",
       "addressSubtitle": "Office - C1 - 1F - SF4362",
       "phone": "Toll Free Phone",
-      "website": "Website"
+      "website": "Website",
+      "email": "Email"
     }
   },
   "gallery": {
@@ -98,10 +100,12 @@
     "searchDescription": "We provide search and supply services on demand. Contact us to get the car of your dreams",
     "phone": "Toll Free Phone",
     "website": "Website",
+    "email": "Email",
     "fullView": "Full View",
     "new": "New",
     "used": "Used",
     "photos": "Photos",
+    "car0": "Range Rover Black Edition",
     "car1": "Ford F-Series Pickup Raptor",
     "car2": "Mercedes-Benz",
     "car3": "Toyota Sedan",

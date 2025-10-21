@@ -144,7 +144,7 @@ export default function Home() {
               <a className="text-lg font-bold text-gold-600 text-left" href="tel:(06)5207204" dir="ltr">(06) 520 7204</a>
             </div>
             <div className="bg-white px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <p className="text-sm text-gray-600">{t('home.inquiry.website')}</p>
+              <p className="text-sm text-gray-600">{t('home.inquiry.email')}</p>
               <a target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-gold-600 hover:text-gold-700 transition-colors" href="mailto:info@unitedint-uae.com">info@unitedint-uae.com</a>
             </div>
           </div>

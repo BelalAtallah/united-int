@@ -17,6 +17,20 @@ export default function Gallery() {
 
   const cars: Car[] = [
     {
+      id: 'car0',
+      title: t('gallery.car0'),
+      category: t('gallery.new'),
+      images: [
+        '/united-int/Range(1).jpeg',
+        '/united-int/Range(2).jpeg',
+        '/united-int/Range(3).jpeg',
+        '/united-int/Range(4).jpeg',
+        '/united-int/Range(5).jpeg',
+        '/united-int/Range(6).jpeg',
+      ],
+      coverImage: '/united-int/Range(6).jpeg',
+    },
+    {
       id: 'car1',
       title: t('gallery.car1'),
       category: t('gallery.new'),
@@ -188,7 +202,7 @@ export default function Gallery() {
                 <a className="text-lg font-bold text-gold-600 text-left" href="tel:(06)5207204" dir="ltr">(06) 520 7204</a>
               </div>
               <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gray-200 hover:border-gold-500 hover:scale-105 transition-all duration-300">
-                <p className="text-sm text-gray-600">{t('gallery.website')}</p>
+                <p className="text-sm text-gray-600">{t('gallery.email')}</p>
                 <a target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-gold-600 hover:text-gold-700 transition-colors" href="mailto:info@unitedint-uae.com">info@unitedint-uae.com</a>
               </div>
             </div>

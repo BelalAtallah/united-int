@@ -146,7 +146,7 @@ export default function About() {
               </div>
               <div className="hover:scale-105 transition-transform duration-300">
                 <p className="text-gray-600 mb-2">
-                  {t("about.contactInfo.website")}
+                  {t("about.contactInfo.email")}
                 </p>
                 <a
                   target="_blank"
