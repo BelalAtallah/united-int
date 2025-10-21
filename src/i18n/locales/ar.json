@@ -86,8 +86,7 @@
     "contactInfo": {
       "title": "معلومات الاتصال",
       "address": "العنوان",
-      "addressValue": "مبنى C1، منطقة عجمان الحرة",
-      "addressSubtitle": "Office - C1 - 1F - SF4362",
+      "addressValue": "الجرف الصناعه ١ ، عجمان, مبنى رقم 44, PO box : 20010",
       "phone": "الهاتف المجاني",
       "website": "الموقع الإلكتروني",
       "email": "البريد الإلكتروني"
@@ -125,8 +124,7 @@
     "registrationNumber": "رقم السجل",
     "freeZoneEstablishment": "مؤسسة منطقة حرة",
     "capital": "رأس المال",
-    "address": "مبنى C1، الطابق الأول",
-    "addressLine2": "منطقة عجمان الحرة، الإمارات",
+    "address": " الجرف الصناعه ١ ، عجمان, مبنى رقم 44",
     "licensedBy": "مرخصة من هيئة المناطق الحرة في عجمان"
   }
 }

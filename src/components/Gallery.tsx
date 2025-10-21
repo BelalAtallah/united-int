@@ -45,7 +45,7 @@ export default function Gallery() {
         "/assets/black-range-rover/black-range-rover(10).jpeg",
         "/assets/black-range-rover/black-range-rover(11).jpeg",
       ],
-      coverImage: "/assets/black-range-rover/black-range-rover(1).jpeg",
+      coverImage: "/assets/black-range-rover/black-range-rover(4).jpeg",
     },
     {
       id: "black-range-rover-2025",
@@ -61,7 +61,7 @@ export default function Gallery() {
         "/assets/black-range-rover-2025/black-range-rover-2025(7).jpeg",
         "/assets/black-range-rover-2025/black-range-rover-2025(8).jpeg",
       ],
-      coverImage: "/assets/black-range-rover-2025/black-range-rover-2025(1).jpeg",
+      coverImage: "/assets/black-range-rover-2025/black-range-rover-2025(4).jpeg",
     },
     {
       id: "bmwx4",
@@ -79,7 +79,7 @@ export default function Gallery() {
     },
     {
       id: "e200",
-      title: "E200",
+      title: "Mercedes E200",
       category: t("gallery.used"),
       images: [
         "/assets/e200/e200(1).jpeg",
@@ -93,11 +93,11 @@ export default function Gallery() {
         "/assets/e200/e200(9).jpeg",
         "/assets/e200/e200(10).jpeg",
       ],
-      coverImage: "/assets/e200/e200(1).jpeg",
+      coverImage: "/assets/e200/e200(10).jpeg",
     },
     {
       id: "e200-white",
-      title: "E200 White",
+      title: "Mercedes E200 White",
       category: t("gallery.used"),
       images: [
         "/assets/e200-white/e200-white(1).jpeg",
@@ -172,7 +172,7 @@ export default function Gallery() {
         "/assets/silver-range-rover/silver-range-rover(12).jpeg",
         "/assets/silver-range-rover/silver-range-rover(13).jpeg",
       ],
-      coverImage: "/assets/silver-range-rover/silver-range-rover(1).jpeg",
+      coverImage: "/assets/silver-range-rover/silver-range-rover(10).jpeg",
     },
     {
       id: "white-porsche",
@@ -191,7 +191,7 @@ export default function Gallery() {
         "/assets/white-porsche/white-porsche(10).jpeg",
         "/assets/white-porsche/white-porsche(11).jpeg",
       ],
-      coverImage: "/assets/white-porsche/white-porsche(1).jpeg",
+      coverImage: "/assets/white-porsche/white-porsche(11).jpeg",
     },
     {
       id: "white-range-rover",
@@ -215,6 +215,27 @@ export default function Gallery() {
         "/assets/white-range-rover/white-range-rover(15).jpeg",
       ],
       coverImage: "/assets/white-range-rover/white-range-rover(1).jpeg",
+    },
+    {
+      id: "black-range",
+      title: "Black Range Rover",
+      category: t("gallery.used"),
+      images: [
+        "/assets/black-range/black-range(1).jpeg",
+        "/assets/black-range/black-range(2).jpeg",
+        "/assets/black-range/black-range(3).jpeg",
+        "/assets/black-range/black-range(4).jpeg",
+        "/assets/black-range/black-range(5).jpeg",
+        "/assets/black-range/black-range(6).jpeg",
+        "/assets/black-range/black-range(7).jpeg",
+        "/assets/black-range/black-range(8).jpeg",
+        "/assets/black-range/black-range(9).jpeg",
+        "/assets/black-range/black-range(10).jpeg",
+        "/assets/black-range/black-range(11).jpeg",
+        "/assets/black-range/black-range(12).jpeg",
+        "/assets/black-range/black-range(13).jpeg",
+      ],
+      coverImage: "/assets/black-range/black-range(1).jpeg",
     },
   ];
 

@@ -46,7 +46,6 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-gold-500 flex-shrink-0 mt-1" />
                 <span className="text-gray-400">
                   {t('footer.address')}<br />
-                  {t('footer.addressLine2')}
                 </span>
               </li>
               <li className="flex items-center gap-3 hover:text-gold-400 transition-colors">
