@@ -81,7 +81,7 @@ export default function Home() {
               </div>
               <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gold-300 hover:border-gold-500 hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <p className="text-sm text-gray-600">{t('home.established')}</p>
-                <p className="text-lg font-bold text-gold-600">2025</p>
+                <p className="text-lg font-bold text-gold-600">2024</p>
               </div>
             </div>
           </div>
