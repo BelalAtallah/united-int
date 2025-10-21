@@ -9,6 +9,9 @@ mkdir -p temp-deploy
 # Copy the built files to the temporary directory
 cp -r dist/* temp-deploy/
 
+# Copy CNAME file for custom domain
+cp CNAME temp-deploy/
+
 # Deploy to gh-pages
 gh-pages -d temp-deploy
 
