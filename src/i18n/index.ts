@@ -22,7 +22,7 @@ i18n
     resources,
     fallbackLng: 'ar', // Default to Arabic
     debug: false,
-    
+    lng: 'ar',
     detection: {
       order: ['localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage'],

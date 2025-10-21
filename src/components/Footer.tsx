@@ -51,11 +51,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 hover:text-gold-400 transition-colors">
                 <Phone className="w-5 h-5 text-gold-500 flex-shrink-0" />
-                <span className="text-gray-400" dir="ltr">800 2392</span>
+                <a href="tel:8002392" className="text-gray-400 hover:text-gold-400 transition-colors" dir="ltr">800 2392</a>
               </li>
               <li className="flex items-center gap-3 hover:text-gold-400 transition-colors">
                 <Globe className="w-5 h-5 text-gold-500 flex-shrink-0" />
-                <span className="text-gray-400">www.fza.ae</span>
+                <a href="https://www.fza.ae" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold-400 transition-colors">www.fza.ae</a>
               </li>
             </ul>
           </div>
