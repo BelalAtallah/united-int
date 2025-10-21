@@ -34,6 +34,6 @@ jobs:
     - name: Deploy to GitHub Pages
       run: |
         git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git
-        npm run deploy
+        npx gh-pages -d dist --dotfiles --remove "**/*"
       env:
         GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
