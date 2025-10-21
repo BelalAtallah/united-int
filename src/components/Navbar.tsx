@@ -77,7 +77,7 @@ export default function Navbar() {
               className="flex items-center gap-2 px-3 py-2 text-gray-700 hover:text-gold-600 font-medium transition-all duration-300 text-sm border border-gray-300 rounded-lg hover:border-gold-500 hover:bg-gold-50"
             >
               <Globe className="w-4 h-4" />
-              <span>{i18n.language === 'ar' ? 'EN' : 'عربي'}</span>
+              <span className="mt-2">{i18n.language === 'ar' ? 'EN' : 'عربي'}</span>
             </button>
           </div>
 

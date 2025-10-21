@@ -9,7 +9,7 @@ export default function Gallery() {
   const carImages = [
     {
       url: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: t('gallery.car1'),
+      title: t('gallery.car9'),
       category: t('gallery.new'),
     },
     {
@@ -49,7 +49,7 @@ export default function Gallery() {
     },
     {
       url: 'https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      title: t('gallery.car9'),
+      title: t('gallery.car1'),
       category: t('gallery.new'),
     },
   ];
