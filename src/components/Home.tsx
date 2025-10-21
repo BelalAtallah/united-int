@@ -1,4 +1,5 @@
 import { Car, Package, Truck, Wrench, FileCheck } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Home() {
   const services = [
@@ -36,25 +37,28 @@ export default function Home() {
 
   return (
     <section id="home" className="pt-20">
-      <div className="relative bg-gradient-to-br from-gold-50 via-white to-gold-50 overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div className="relative bg-gradient-to-br from-gray-50 via-white to-gold-50 overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle, #8B6F3F 1px, transparent 1px)',
+            backgroundSize: '40px 40px'
+          }}></div>
+        </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="text-center">
-            <div className="inline-block mb-6">
-              <div className="bg-gold-500 p-4 rounded-2xl shadow-lg">
-                <Car className="w-16 h-16 text-white" />
-              </div>
+            <div className="inline-block mb-6 animate-scale-in">
+              <Logo className="w-24 h-24 mx-auto drop-shadow-xl hover:scale-110 transition-transform duration-500" />
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 animate-fade-in-up">
               المتحدون انترناشيونال
             </h1>
-            <p className="text-2xl md:text-3xl text-gold-600 font-semibold mb-6">
+            <p className="text-2xl md:text-3xl text-gold-600 font-semibold mb-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
               United International F.Z.E
             </p>
 
-            <div className="max-w-3xl mx-auto mb-8">
+            <div className="max-w-3xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                 شريكك الموثوق في تجارة السيارات والخدمات اللوجستية
               </p>
@@ -63,16 +67,16 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gold-200">
+            <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+              <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gold-300 hover:border-gold-500 hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <p className="text-sm text-gray-600">رقم الرخصة</p>
                 <p className="text-lg font-bold text-gold-600">39087</p>
               </div>
-              <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gold-200">
+              <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gold-300 hover:border-gold-500 hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <p className="text-sm text-gray-600">الموقع</p>
                 <p className="text-lg font-bold text-gold-600">منطقة عجمان الحرة</p>
               </div>
-              <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gold-200">
+              <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gold-300 hover:border-gold-500 hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <p className="text-sm text-gray-600">تأسست</p>
                 <p className="text-lg font-bold text-gold-600">2025</p>
               </div>
@@ -84,22 +88,23 @@ export default function Home() {
       <div className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">
               خدماتنا
             </h2>
-            <div className="w-24 h-1 bg-gold-500 mx-auto"></div>
+            <div className="w-24 h-1 bg-gold-600 mx-auto animate-slide-in-right"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-white to-gold-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gold-200 hover:border-gold-400 group"
+                className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200 hover:border-gold-500 group hover:-translate-y-2 animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="bg-gold-500 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="bg-gradient-to-br from-gold-500 to-gold-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-gold-600 transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-sm text-gold-600 font-medium mb-3">
@@ -114,20 +119,28 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-br from-gold-500 to-gold-600 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+      <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 py-16 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'linear-gradient(45deg, #8B6F3F 25%, transparent 25%, transparent 75%, #8B6F3F 75%, #8B6F3F), linear-gradient(45deg, #8B6F3F 25%, transparent 25%, transparent 75%, #8B6F3F 75%, #8B6F3F)',
+            backgroundSize: '60px 60px',
+            backgroundPosition: '0 0, 30px 30px'
+          }}></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in-up">
             هل لديك استفسار؟
           </h2>
-          <p className="text-xl text-gold-50 mb-8">
+          <p className="text-xl text-gray-300 mb-8 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
             نحن هنا لمساعدتك في جميع احتياجاتك التجارية
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <div className="bg-white px-8 py-4 rounded-lg">
+          <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-white px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
               <p className="text-sm text-gray-600">الهاتف المجاني</p>
               <p className="text-lg font-bold text-gold-600 text-left" dir="ltr">800 2392</p>
             </div>
-            <div className="bg-white px-8 py-4 rounded-lg">
+            <div className="bg-white px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
               <p className="text-sm text-gray-600">الموقع الإلكتروني</p>
               <p className="text-lg font-bold text-gold-600">www.fza.ae</p>
             </div>

@@ -5,20 +5,44 @@ export default {
     extend: {
       colors: {
         gold: {
-          50: '#FDFBF7',
-          100: '#F9F5E8',
-          200: '#F3E9C9',
-          300: '#E9D79C',
-          400: '#DEC36F',
-          500: '#D4AF37',
-          600: '#B8952D',
-          700: '#947723',
-          800: '#6F591A',
-          900: '#4A3C11',
+          50: '#F8F6F3',
+          100: '#E8E2D8',
+          200: '#D4C5AD',
+          300: '#BFA582',
+          400: '#A68555',
+          500: '#8B6F3F',
+          600: '#705832',
+          700: '#5A4527',
+          800: '#43331D',
+          900: '#2D2113',
         },
       },
       fontFamily: {
         arabic: ['Tajawal', 'sans-serif'],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.6s ease-in-out',
+        'fade-in-up': 'fadeInUp 0.8s ease-out',
+        'slide-in-right': 'slideInRight 0.6s ease-out',
+        'scale-in': 'scaleIn 0.5s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideInRight: {
+          '0%': { opacity: '0', transform: 'translateX(-30px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.9)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
       },
     },
   },
