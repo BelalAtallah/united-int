@@ -1,4 +1,4 @@
-import { MapPin, Phone, Globe } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import Logo from './Logo';
 
@@ -51,11 +51,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 hover:text-gold-400 transition-colors">
                 <Phone className="w-5 h-5 text-gold-500 flex-shrink-0" />
-                <a href="tel:8002392" className="text-gray-400 hover:text-gold-400 transition-colors" dir="ltr">800 2392</a>
+                <a href="tel:(06)5207204" className="text-gray-400 hover:text-gold-400 transition-colors" dir="ltr">(06) 520 7204</a>
               </li>
               <li className="flex items-center gap-3 hover:text-gold-400 transition-colors">
-                <Globe className="w-5 h-5 text-gold-500 flex-shrink-0" />
-                <a href="https://www.fza.ae" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold-400 transition-colors">www.fza.ae</a>
+                <Mail className="w-5 h-5 text-gold-500 flex-shrink-0" />
+                <a href="mailto:info@unitedint-uae.com" className="text-gray-400 hover:text-gold-400 transition-colors">info@unitedint-uae.com</a>
               </li>
             </ul>
           </div>

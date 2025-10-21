@@ -161,11 +161,11 @@ export default function About() {
               </div>
               <div className="hover:scale-105 transition-transform duration-300">
                 <p className="text-gray-600 mb-2">{t('about.contactInfo.phone')}</p>
-                <p className="font-bold text-gold-600 text-center" dir="ltr">800 2392</p>
+                <a className="font-bold text-gold-600 text-center" href="tel:(06)5207204" dir="ltr">(06) 520 7204</a>
               </div>
               <div className="hover:scale-105 transition-transform duration-300">
                 <p className="text-gray-600 mb-2">{t('about.contactInfo.website')}</p>
-                <p className="font-bold text-gold-600">www.fza.ae</p>
+                <a target="_blank" rel="noopener noreferrer" className="font-bold text-gold-600" href="mailto:info@unitedint-uae.com">info@unitedint-uae.com</a>
               </div>
             </div>
           </div>
