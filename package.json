@@ -3,13 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://belalatallah.github.io/united-int",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
-    "deploy": "npm run build && gh-pages -d dist --dotfiles"
+    "deploy": "./deploy.sh"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
