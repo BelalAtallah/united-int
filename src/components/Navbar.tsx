@@ -33,7 +33,7 @@ export default function Navbar() {
               <Logo className="w-12 h-12" />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-800 hover:text-gold-600 transition-colors">المتحدون انترناشيونال</span>
+              <span className="text-md  font-bold text-gray-800 hover:text-gold-600 transition-colors lg:text-2xl">المتحدون انترناشيونال</span>
               <span className="text-xs text-gray-600">United International F.Z.E</span>
             </div>
           </div>

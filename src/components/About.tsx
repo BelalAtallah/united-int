@@ -158,7 +158,7 @@ export default function About() {
               </div>
               <div className="hover:scale-105 transition-transform duration-300">
                 <p className="text-gray-600 mb-2">الهاتف المجاني</p>
-                <p className="font-bold text-gold-600 text-left" dir="ltr">800 2392</p>
+                <p className="font-bold text-gold-600 text-center" dir="ltr">800 2392</p>
               </div>
               <div className="hover:scale-105 transition-transform duration-300">
                 <p className="text-gray-600 mb-2">الموقع الإلكتروني</p>
