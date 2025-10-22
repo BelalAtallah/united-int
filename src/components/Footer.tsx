@@ -35,7 +35,7 @@ export default function Footer() {
               <li className="hover:text-gold-400 transition-colors">{t('footer.licenseNumber')}: 39087</li>
               <li className="hover:text-gold-400 transition-colors">{t('footer.registrationNumber')}: 39087</li>
               <li className="hover:text-gold-400 transition-colors">{t('footer.freeZoneEstablishment')}</li>
-              <li className="hover:text-gold-400 transition-colors">{t('footer.capital')}: 100,000 AED</li>
+              <li className="hover:text-gold-400 transition-colors">{t('footer.capital')}: 10,000,000 AED</li>
             </ul>
           </div>
 
@@ -50,7 +50,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 hover:text-gold-400 transition-colors">
                 <Phone className="w-5 h-5 text-gold-500 flex-shrink-0" />
-                <a href="tel:(06)5207204" className="text-gray-400 hover:text-gold-400 transition-colors" dir="ltr">(06) 520 7204</a>
+                <a href="tel:(06)5207204" className="text-gray-400 hover:text-gold-400 transition-colors" dir="ltr">(+971) 6520 7204</a>
               </li>
               <li className="flex items-center gap-3 hover:text-gold-400 transition-colors">
                 <Mail className="w-5 h-5 text-gold-500 flex-shrink-0" />
