@@ -333,10 +333,10 @@ export default function Gallery() {
                 <p className="text-sm text-gray-600">{t("gallery.phone")}</p>
                 <a
                   className="text-lg font-bold text-gold-600 text-left"
-                  href="tel:(06)5207204"
+                  href="tel:(+971)65207204"
                   dir="ltr"
                 >
-                  (06) 520 7204
+                  (+971) 6520 7204
                 </a>
               </div>
               <div className="bg-white px-6 py-3 rounded-lg shadow-md border-2 border-gray-200 hover:border-gold-500 hover:scale-105 transition-all duration-300">

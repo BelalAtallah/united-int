@@ -135,10 +135,10 @@ export default function About() {
                 </p>
                 <a
                   className="font-bold text-gold-600 text-center"
-                  href="tel:(06)5207204"
+                  href="tel:(+971)65207204"
                   dir="ltr"
                 >
-                  (06) 520 7204
+                  (+971) 6520 7204
                 </a>
               </div>
               <div className="hover:scale-105 transition-transform duration-300">
